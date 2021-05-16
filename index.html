@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+	<title>index</title>
+	<style>
+		html {
+			height:100%;
+		}
+		body {
+			background-color:#000;
+			margin:0;
+			height:100%;
+		}
+	</style>
+	<!-- copy these lines to your document head: -->
+
+	<meta name="viewport" content="user-scalable=yes, width=800" />
+	<link href='https://fonts.googleapis.com/css?family=Lexend+Mega&subset=latin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Mina&subset=latin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pangolin&subset=latin' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Red+Hat+Display:900&subset=latin' rel='stylesheet' type='text/css'>
+	
+	<script>
+		var gblWaveNumber = 1;				// The current wave (level) of the game
+		var gblMoveLeftInterval;			// Used to move the cannon left
+		var gblMoveRightInterval;			// Used to move the cannon right
+		var gblCannonBoltInterval;			// Used to move the cannon bolt
+		var gblArmadaInterval;				// Used to move the alien armada
+		var gblMothershipInterval;			// Used to move the mothership
+		var gblSetLoopLeft;					// If true (and gblSetLoopRight is false) the cannon can move left
+		var gblSetLoopRight;				// If true (and gblSetLoopLeft is false) the cannon can move right
+		var gblCannonBoltVisible;			// Is the cannon bolt visible?
+		var gblExtraLifeEarned;				// Has an extra life been earned yet? (Only one extra life can be earned per game.)
+		var gblBarriersIntact;				// Are the barriers still intact?
+		var gblLivesRemaining;				// The number of lives remaining to the player
+		var gblScore;						// The player's score
+		var gblMothershipCounter;			// The counter is used to control the movement of the mothership
+		var gblArmadaLeftBoundary;			// The leftmost boundary that the leftmost column of the armada can move
+		var gblArmadaRightBoundary;			// The rightmost boundary that the leftmost column of the armada can move
+		var gblArmadaBottom;				// The current bottom position of the bottom row of the armada
+		var gblArmadaDirection;				// The direction the armada is moving (either 'right' or 'left')
+		var gblRowBottomPos = [];			// The bottom boundary positions of each row
+		var gblColumnLeftPos = [];			// The left boundary positions of each column
+		var gblAliensRemaining;				// The number of aliens remaining
+		var gblRowCounts = [];				// The number of aliens in each row
+		var gblColumnCounts = [];			// The number of aliens in each column
+		var gblArmadaRate;					// The speed of the armada movement interval in milliseconds
+		var gblWaveCompleted;				// Has the current wave been completed?
+		var gblCannonHitCounter;			// Used for timing the cannon-hit animation
+		var gblCannonHitInterval;			// Used to control the cannon-hit state
+		var gblAlienBoltHidden = [];		// Is each alien bolt hidden or visible?			
+		var gblAlienBoltInterval = [];		// Controls the movement of each alien bolt
+		var gblGameOver;					// Whether the game is over
+		var gblControlScheme = "keyboard";	// Either "keyboard" or "touchscreen"
+	</script>
+	
+
+	<!-- end copy -->
+  </head>
+  <body>
+	<!-- copy these lines to your document: -->
+
+	<div id="index_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:800px;height:640px;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="index.hyperesources/index_hype_generated_script.js?12949"></script>
+	</div>
+
+	<!-- end copy -->
+	
+
+
+	<!-- text content for search engines: -->
+
+	<div style="display:none" aria-hidden=true>
+
+		<div></div>
+		<div>SPECTRAL INVASION</div>
+		<div>SCORE</div>
+		<div>XXXXX</div>
+		<div>LIVES</div>
+		<div>X</div>
+		<div>START</div>
+		<div>SPECTRAL INVASION</div>
+		<div>100 PTS!</div>
+		<div>PLAY</div>
+		<div>INSTRUCTIONS</div>
+		<div>ARROW KEYS TO MOVE</div>
+		<div>SPACE BAR TO FIRE</div>
+		<div>200 PTS!</div>
+		<div>300 PTS!</div>
+		<div>400 PTS!</div>
+		<div>500 PTS!</div>
+		<div>600 PTS!</div>
+		<div>SFB Games' ChipTone</div>
+		<div>SPECIAL THANKS</div>
+		<div>DEVELOPMENT TOOLS</div>
+		<div>MUSIC & SOUND</div>
+		<div>Adobe Audition</div>
+		<div>Jason Pape</div>
+		<div>Tumult Hype</div>
+		<div>PLAYTESTING</div>
+		<div>PLAY AGAIN?</div>
+		<div>Thanks for playing!</div>
+		<div>Adobe Photoshop</div>
+		<div>Saint Paul College
+</div>
+		<div>PROGRAMMING</div>
+		<div>Piskel</div>
+		<div>Reason Studios' Reason</div>
+		<div>Régan</div>
+		<div>Régan & Ben</div>
+		<div>Darren Pearson</div>
+		<div>FINAL SCORE: 000000</div>
+		<div>SFB Games for ChipTone</div>
+		<div>Ben</div>
+		<div>GRAPHICS</div>
+		<div>TOUCHSCREEN</div>
+		<div>KEYBOARD</div>
+		<div>CHOOSE YOUR CONTROL SCHEME</div>
+
+	</div>
+
+	<!-- end text content: -->
+
+  </body>
+</html>
